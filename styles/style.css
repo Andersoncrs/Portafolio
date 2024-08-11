@@ -109,8 +109,8 @@ body {
 }
 .section__image {
   align-self: flex-start;
-  width: 40%;
-  height: 40%;
+  width: clamp(160px, 40%, 1000px);
+  height: clamp(160px, 40%, 1000px);
 }
 
 .footer__text {
