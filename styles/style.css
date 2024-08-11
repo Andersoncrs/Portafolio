@@ -19,9 +19,12 @@
     transform: scale(1);
   }
 }
+html {
+  font-size: 1.2vw;
+}
+
 body {
   font-family: var(--fuente-secundaria);
-  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
   color: var(--color-letra);
@@ -38,7 +41,7 @@ body {
 }
 .nav__link {
   font-family: var(--fuente-principal);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -51,15 +54,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
 }
 .section__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 593px;
+  width: 50%;
 }
 .section__title {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
 }
 .section__title:hover {
@@ -69,7 +73,7 @@ body {
   color: var(--enfasis);
 }
 .section__text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--fuente-principal);
 }
 .section__links {
@@ -79,18 +83,18 @@ body {
   justify-content: space-evenly;
   align-items: center;
   font-family: var(--fuente-principal);
-  font-size: 24px;
+  font-size: 1.5rem;
   gap: 32px;
 }
 .section__subtitle {
   font-family: var(--fuente-secundaria);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 .section__link {
   text-align: center;
   border: 10px double var(--enfasis);
-  width: 378px;
+  width: 80%;
   border-radius: 18px;
   color: var(--color-letra);
   text-decoration: none;
@@ -105,12 +109,13 @@ body {
 }
 .section__image {
   align-self: flex-start;
-  margin-right: 5%;
+  width: 40%;
+  height: 40%;
 }
 
 .footer__text {
   color: var(--color-letra);
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   background-color: var(--enfasis);
   font-family: var(--fuente-principal);
@@ -118,10 +123,38 @@ body {
 }
 
 .main__text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--fuente-principal);
   color: var(--color-letra);
   margin: 0% 15% 2% 15%;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: calc(62.5% + 0.9vw);
+  }
+  .nav {
+    justify-content: center;
+    gap: 10%;
+  }
+  .section {
+    margin: 3% 5%;
+    flex-direction: column-reverse;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .section__content {
+    width: auto;
+  }
+  .section__image {
+    align-self: center;
+  }
+  .section__link {
+    width: clamp(180px, 50%, 400px);
+  }
+  .main__text {
+    margin: 0% 5% 2% 5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
