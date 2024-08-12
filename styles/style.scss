@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --enfasis: purple;
-    --fondo: #000000;
+    --enfasis: #0043C9;
+    --fondo: black;
     --color-letra: #FFFFFF;
     --color-hover: #272727;
     --fuente-principal: "Montserrat", sans-serif;
@@ -17,7 +17,7 @@
   }
 
 html{
-    font-size: 1.2vw;
+    font-size: calc(62.5% + 0.5vw);
 }
 
 body {
